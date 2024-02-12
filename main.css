@@ -15,3 +15,11 @@
     content: "-";
     margin-right: 4px;
 }
+
+.listree-submenu-items {
+    list-style: none;
+    border-left: 1px dashed black;
+    white-space: nowrap;
+    margin-right: 4px;
+    padding-left: 20px;
+}
