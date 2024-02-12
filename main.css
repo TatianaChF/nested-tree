@@ -5,3 +5,13 @@
 .listree-submenu-items {
     list-style: none;
 }
+
+.listree-submenu-heading.collapsed:before {
+    content: "+";
+    margin-right: 4px;
+}
+
+.listree-submenu-heading.expanded:before {
+    content: "-";
+    margin-right: 4px;
+}
