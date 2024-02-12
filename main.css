@@ -7,12 +7,12 @@
 }
 
 .listree-submenu-heading.collapsed:before {
-    content: "+";
+    content: ">";
     margin-right: 4px;
 }
 
 .listree-submenu-heading.expanded:before {
-    content: "-";
+    content: "V";
     margin-right: 4px;
 }
 
