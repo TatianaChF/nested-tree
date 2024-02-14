@@ -12,10 +12,6 @@
     list-style: none;
 }
 
-.listree-submenu-items {
-    list-style: none;
-}
-
 .listree-submenu-heading.collapsed:before {
     content: ">";
     margin-right: 4px;
