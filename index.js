@@ -1,8 +1,10 @@
 function listree() {
     const subMenuHeadings = document.getElementsByClassName("listree-submenu-heading");
-    Array.from(subMenuHeadings).forEach(function(subMenuHeading){
+    Array.from(subMenuHeadings).forEach(function(subMenuHeading) {
         subMenuHeading.classList.add("collapsed");
-        subMenuHeading.nextElementSibling.style.display = "none";
+        document.addEventListener("DOMContentLoaded", function() {
+            subMenuHeading.nextElementSibling.style.display = "none";
+        })
         subMenuHeading.addEventListener('click', function(event){
             event.preventDefault();
             const subMenuList = event.target.nextElementSibling;
