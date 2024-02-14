@@ -6,11 +6,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    cursor: pointer;
 }
 
 .listree {
     list-style: none;
+    cursor: pointer;
 }
 
 .listree-submenu-heading.collapsed:before {
