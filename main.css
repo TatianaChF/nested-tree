@@ -13,12 +13,12 @@
 }
 
 .listree-submenu-heading.collapsed:before {
-    content: ">";
+    content: url("./images/next.png");
     margin-right: 4px;
 }
 
 .listree-submenu-heading.expanded:before {
-    content: "V";
+    content: url("./images//navigate.png");
     margin-right: 4px;
 }
 
