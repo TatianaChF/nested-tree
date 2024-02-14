@@ -114,16 +114,12 @@ function buildTree(parentId, data) {
 
 const result = buildTree(null, itemGroup)
 
-console.log(itemGroup);
-console.log(result);    
-
 function renderList(htmlStr, list) {
     list.forEach((item) => {
-        htmlStr += `<div class="listree-submenu-heading">${item.name} (${item.price})</div>`;
+        htmlStr += `<li>
+            <div class="listree-submenu-heading">${item.name} (${item.price})</div>`;
         if (item.child && item.child.length > 0) {
-            htmlStr += `<ul class="listree-submenu-items">
-                <li>${renderList("", item.child)}</li>
-            </ul>`;
+            htmlStr += `<ul class="listree-submenu-items">${renderList("", item.child)}</ul></li>`;
         }
     });
 
@@ -131,12 +127,9 @@ function renderList(htmlStr, list) {
 }
 
 function renderData(list) {
-    let finalHtml = `<ul class="listree">
-        <li>${renderList(``, list)}</li>
-    </ul>`;
-    let placeHolder = document.querySelector("#listContainer");
+    let finalHtml = `<ul class="listree">${renderList(``, list)}</ul>`;
+    let placeHolder = document.querySelector("#tree");
     placeHolder.innerHTML = finalHtml;
 }
 
-renderData(result);
-
+renderData(result); 
